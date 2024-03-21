@@ -23,7 +23,7 @@
   height: 50px;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1280px) {
   .hamburger {
     display: none;
   }
