@@ -8,10 +8,42 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import "./styles.css";
+import Link from "next/link";
+import Image from "next/image";
 const Navbar = () => {
   return (
-    <section className="navbar">
-      <div className="logo">soller</div>
+    <section className="flex justify-between p-5 items-center">
+      <div className="logo mr-52">soller</div>
+      <div className="links font-bold max-[1280px]:hidden ">
+        <Link href="/" className="p-5">
+          Products
+        </Link>
+        <Link href="/" className="p-5">
+          Solutions
+        </Link>
+        <Link href="/" className="p-5">
+          Services
+        </Link>
+        <Link href="/" className="p-5">
+          Configure
+        </Link>
+      </div>
+      <div className="flex p-2 max-[1280px]:hidden ml-auto">
+        <div className="flex justify-center items-center p-3 gap-3">
+          <Image
+            src="/headset.svg"
+            width={20}
+            height={20}
+            alt="headset"
+            className=""
+          />
+          <p className="">555 818 282</p>
+        </div>
+
+        <button className="bg-amber-300 ml-7 rounded-full p-2 m-1">
+          Request a Quote
+        </button>
+      </div>
       <div className="sheet">
         <div className="hamburger">
           <Sheet>
