@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -6rem;
+}
+
+@media (max-width: 350px) {
+  .images {
+    margin-left: 10rem;
+    position: fixed;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero_desc {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 350px) {
+  .hero_desc {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

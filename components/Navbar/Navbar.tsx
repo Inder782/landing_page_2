@@ -13,7 +13,9 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <section className="flex justify-between p-5 items-center">
-      <div className="logo mr-52">soller</div>
+      <div className="logo mr-52">
+        <Link href="/">soller</Link>
+      </div>
       <div className="links font-bold max-[1280px]:hidden ">
         <Link href="/" className="p-5">
           Products
@@ -45,9 +47,11 @@ const Navbar = () => {
         </button>
       </div>
       <div className="sheet ">
-        <div className="hamburge z-30">
+        <div className="hamburger">
           <Sheet>
-            <SheetTrigger>☰</SheetTrigger>
+            <SheetTrigger className="flex z-30 bg-orange-300 p-2 rounded-full items-center shadow-lg">
+              ☰
+            </SheetTrigger>
             <SheetContent>
               <SheetHeader>
                 <SheetTitle>Are you absolutely sure?</SheetTitle>
