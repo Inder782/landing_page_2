@@ -1,7 +1,10 @@
+import Hero from "@/components/Hero/Hero";
 import React from "react";
 
 const page = () => {
-  return <div></div>;
+  return <div>
+        <Hero/>
+  </div>;
 };
 
 export default page;

@@ -44,8 +44,8 @@ const Navbar = () => {
           Request a Quote
         </button>
       </div>
-      <div className="sheet">
-        <div className="hamburger">
+      <div className="sheet ">
+        <div className="hamburge z-30">
           <Sheet>
             <SheetTrigger>☰</SheetTrigger>
             <SheetContent>
