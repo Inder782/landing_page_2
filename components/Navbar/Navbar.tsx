@@ -12,7 +12,7 @@ import Link from "next/link";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <section className="flex justify-between p-5 items-center">
+    <section className="flex justify-between p-5 items-center ">
       <div className="logo mr-52">
         <Link href="/">soller</Link>
       </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
           Configure
         </Link>
       </div>
-      <div className="flex p-2 max-[1280px]:hidden ml-auto">
+      <div className="flex p-2 max-[1280px]:hidden ml-auto z-20">
         <div className="flex justify-center items-center p-3 gap-3">
           <Image
             src="/headset.svg"
