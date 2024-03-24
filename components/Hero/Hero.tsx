@@ -3,10 +3,10 @@ import React from "react";
 import "./styles.css";
 const Hero = () => {
   return (
-    <div className="hero_sec">
-      <div className="grid grid-cols-2">
-        <div className="hero_desc p-6 text-left ml-3 ">
-          <h1 className="font-bold text-8xl p-2 ">
+    <div className="hero_sec ">
+      <div className="grid grid-cols-2 max-[1280px]:grid max-[1280px]:grid-cols-1 ">
+        <div className="hero_desc p-6 text-left ml-3 max-[1280px]:order-2">
+          <h1 className="font-bold text-8xl p-2">
             Get the Sun to Power Your Home
           </h1>
           <p className=" mt-6 text-3xl p-2">
@@ -17,7 +17,7 @@ const Hero = () => {
             Request a Quote -&gt
           </button>
         </div>
-        <div className=" ">
+        <div className="max-[700px]:w-[35rem] max-[700px]:ml-auto max-[550px]:w-[25rem] max-[550px]:ml-auto max-[400px]:w-[18rem] max-[400px]:ml-auto max-[350px]:w-[22rem] max-[350px]:ml-auto ">
           <Image
             src="/hero_section/first.svg"
             width={650}
@@ -30,7 +30,7 @@ const Hero = () => {
             width={650}
             height={55}
             alt="hero"
-            className="ml-auto mt-[-35rem] z-30 mr-[2rem]"
+            className="ml-auto mt-[-35rem] z-30 mr-[2rem] max-[550px]:hidden"
           />
         </div>
       </div>

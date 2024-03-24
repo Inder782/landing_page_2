@@ -12,8 +12,8 @@ import Link from "next/link";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <section className="flex justify-between p-5 items-center ">
-      <div className="logo mr-52">
+    <section className="flex justify-between p-5 items-center">
+      <div className="logo mr-52 z-50">
         <Link href="/">soller</Link>
       </div>
       <div className="links font-bold max-[1280px]:hidden ">
