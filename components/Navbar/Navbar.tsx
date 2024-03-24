@@ -39,11 +39,11 @@ const Navbar = () => {
             alt="headset"
             className=""
           />
-          <p className="">555 818 282</p>
+          <p className="font-bold text-blue-950">555 818 282</p>
         </div>
 
-        <button className="bg-amber-300 ml-7 rounded-full p-2 m-1">
-          Request a Quote
+        <button className="bg-amber-300 ml-7 rounded-full p-3 m-1 font-bold shadow-lg text-red-950">
+          Request a Quote -{">"}
         </button>
       </div>
       <div className="sheet ">
