@@ -7,45 +7,41 @@ const Section_3 = () => {
       <div className="grid grid-col-1  relative max-[900px]:flex max-[900px]:flex-col max-[900px]:order-1">
         <Image
           src="/section_3/mobile.svg"
-          width={300}
+          width={"455"}
           height={255}
           alt="mobile"
-          className="z-20 mt-10 ml-8"
+          className="absolute z-20 mt-10 ml-8"
         />
         <Image
           src="/section_3/rectangle.svg"
-          width={450}
+          width={"455"}
           height={255}
           alt="frame"
-          className="z-10"
-          style={{ position: "relative", top: "-40rem" }} // Adjust position as needed
+          className="absolute"
         />
         <Image
           src="/section_3/frame.svg"
-          width={147}
+          width={"455"}
           height={255}
           alt="card"
-          className="z-30"
-          style={{ position: "relative", top: "-76rem", left: "16rem" }} // Adjust position as needed
+          className="absolute z-30 top-14"
         />
         <Image
           src="/section_3/ellipse.svg"
-          width={55}
+          width={"455"}
           height={255}
           alt="ellipse"
-          className="z-40"
-          style={{ position: "relative", top: "-75rem", left: "1rem" }} // Adjust position as needed
+          className="z-30"
         />
         <Image
           src="/section_3/ellipse_2.svg"
-          width={55}
+          width={"455"}
           height={255}
           alt="ellipse_2"
-          className="z-50"
-          style={{ position: "relative", top: "-104rem", left: "4rem" }} // Adjust position as needed
+          className=""
         />
       </div>
-      <div className="mt-12 max-[900px]:text-center">
+      {/* <div className="mt-12 max-[900px]:flex max-[900px]:flex-col">
         <p className="font-bold text-xl ml-2">Services</p>
         <h1 className="font-bold text-4xl mt-1">Personalized services</h1>
         <p className="mt-8">
@@ -106,7 +102,7 @@ const Section_3 = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
