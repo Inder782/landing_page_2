@@ -3,15 +3,15 @@ import React from "react";
 
 const Section_4 = () => {
   return (
-    <div className=" grid grid-cols-2 mt-80 max-[950px]:flex max-[950px]:flex-col">
+    <div className=" grid grid-cols-2 mt-80 max-[950px]:flex max-[950px]:flex-col relative overflow-hidden ">
       <div className=" p-8">
         <h1 className="font-bold text-orange-300 mt-12">System Features</h1>
-        <h1 className="font-bold text-5xl mt-2">Powerful features</h1>
+        <h1 className="font-bold text-5xl mt-2 ">Powerful features</h1>
         <p className="mt-10">
           Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et.
           Auctor turpis semper id sit ornare maecenas lectus sed.
         </p>
-        <div className="mt-20 grid grid-cols-2 gap-12">
+        <div className="mt-20 grid grid-cols-2 gap-12 ">
           <div className="">
             <Image
               src="section_4/icons/icon_1.svg"
@@ -66,21 +66,22 @@ const Section_4 = () => {
           </div>
         </div>
       </div>
-      <div className=" relative ">
+      <div className="relative">
         <Image
           src="section_4/rectangle_4.svg"
           width={500}
-          height={55}
+          height={25}
           alt="rectangle"
-          className="absolute"
+          className="ml-auto max-[450px]:w-[30rem] max-[450px]:-top-[20rem]"
         />
-        {/* <Image
+        <Image
           src="section_4/mobile_sec_4.svg"
-          width={295}
-          height={55}
+          layout="intrinsic"
+          width={350}
+          height={95}
           alt="ellipse"
-          className="absolute top-60 right-36 z-10 max-[950px]:w-[10rem] max-[950px]:right-1 max-[950px]:top-2 max-[450px]:w-[4rem] max-[450px]:left-[22rem]"
-        /> */}
+          className="relative -top-[40rem] right-20 ml-auto max-[450px]:w-[10rem] max-[450px]:-top-[20rem]"
+        />
         {/* <Image
           src="section_4/ellipse.svg"
           width={99}
