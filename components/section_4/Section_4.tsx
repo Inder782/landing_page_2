@@ -69,25 +69,18 @@ const Section_4 = () => {
       <div className=" relative ">
         <Image
           src="section_4/rectangle_4.svg"
-          width={500}
+          width={450}
           height={55}
           alt="rectangle"
-          className="absolute"
+          className="absolute right-0 max-[350px]:left-28"
         />
-        {/* <Image
+        <Image
           src="section_4/mobile_sec_4.svg"
-          width={295}
+          width={230}
           height={55}
           alt="ellipse"
-          className="absolute top-60 right-36 z-10 max-[950px]:w-[10rem] max-[950px]:right-1 max-[950px]:top-2 max-[450px]:w-[4rem] max-[450px]:left-[22rem]"
-        /> */}
-        {/* <Image
-          src="section_4/ellipse.svg"
-          width={99}
-          height={55}
-          alt="ellipse"
-          className="absolute top-[38rem] right-[rem] z-10 max-[950px]:w-[10rem] max-[950px]:ml-auto max-[450px]:w-[4rem] max-[450px]:left-[22rem]"
-        /> */}
+          className="relative left-80 top-48  max-[350px]:top-32 max-[350px]:w-[8rem] z-30"
+        />
       </div>
     </div>
   );
