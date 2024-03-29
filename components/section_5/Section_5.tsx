@@ -36,13 +36,30 @@ const Section_5 = () => {
           <CarouselPrevious className="bg-blue-500" />
           <CarouselContent>
             <CarouselItem>
-              <div>
+              <div className="bg-white w-52">
                 <Image
-                  src="/section_5/1.svg"
+                  src="/section_5/icons/1.svg"
                   width={25}
                   height={25}
-                  alt="profile"
+                  alt="icon1"
                 />
+                <span>
+                  Purus maecenas quis elit eu, aliquet. Tellus porttitor ut
+                  sollicitudin sit non fringilla. Quam nunc volutpat senectus
+                  neque eget amet pharetra, euismod. Tempus, nunc, molestie
+                  imperdiet curabitur commodo euismod.
+                </span>
+                <div>
+                  {" "}
+                  <Image
+                    src="/section_5/profiles/1.svg"
+                    width={25}
+                    height={25}
+                    alt="profile"
+                  />
+                  <span>Ralph Edwards</span>
+                  <span>32kw</span>
+                </div>
               </div>
             </CarouselItem>
           </CarouselContent>
