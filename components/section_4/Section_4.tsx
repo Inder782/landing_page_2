@@ -72,14 +72,14 @@ const Section_4 = () => {
           width={450}
           height={55}
           alt="rectangle"
-          className="absolute right-0 max-[350px]:left-28"
+          className="absolute right-0 max-[450px]:w-[20rem]"
         />
         <Image
           src="section_4/mobile_sec_4.svg"
           width={230}
           height={55}
           alt="ellipse"
-          className="relative left-80 top-48  max-[350px]:top-32 max-[350px]:w-[8rem] z-30"
+          className="absolute right-36 top-32 max-[450px]:w-[11rem] max-[450px]:left-20"
         />
       </div>
     </div>
