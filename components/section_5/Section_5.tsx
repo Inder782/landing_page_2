@@ -7,7 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-
+import { Caraousal_items } from "@/static/section_5";
 const Section_5 = () => {
   return (
     <div className=" bg-purple-700 sm:mt-[55rem] md:mt-[20rem] max-[4500px]:mt-[52rem] relative">
@@ -31,39 +31,37 @@ const Section_5 = () => {
           </button>
         </div>
       </div>
-      <div className=" flex justify-center">
+      <div className="">
         <Carousel>
-          <CarouselPrevious className="bg-blue-500" />
-          <CarouselContent>
-            <CarouselItem>
-              <div className="bg-white w-52">
-                <Image
-                  src="/section_5/icons/1.svg"
-                  width={25}
-                  height={25}
-                  alt="icon1"
-                />
-                <span>
-                  Purus maecenas quis elit eu, aliquet. Tellus porttitor ut
-                  sollicitudin sit non fringilla. Quam nunc volutpat senectus
-                  neque eget amet pharetra, euismod. Tempus, nunc, molestie
-                  imperdiet curabitur commodo euismod.
-                </span>
-                <div>
+          <CarouselContent className="p-6">
+            {" "}
+            {Caraousal_items.map((item, index) => (
+              <div key={index} className="p-6">
+                {" "}
+                <CarouselItem className="flex flex-col justify-center items-center text-center p-16 basis-1/3 bg-blue-50 rounded-3xl">
                   {" "}
                   <Image
-                    src="/section_5/profiles/1.svg"
-                    width={25}
+                    src={item.icon}
+                    width={75}
                     height={25}
-                    alt="profile"
+                    alt="icons"
+                    className=""
                   />
-                  <span>Ralph Edwards</span>
-                  <span>32kw</span>
-                </div>
+                  <p className="">{item.text}</p>
+                  <div className="flex ml-8 flex-col items-center mt-8">
+                    <Image
+                      src={item.profile}
+                      width={55}
+                      height={25}
+                      alt="profile_pic"
+                    />
+                    <p>{item.name}</p>
+                    <p>{item.power}</p>
+                  </div>
+                </CarouselItem>
               </div>
-            </CarouselItem>
+            ))}
           </CarouselContent>
-          <CarouselNext />
         </Carousel>
       </div>
     </div>
