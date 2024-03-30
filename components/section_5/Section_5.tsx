@@ -38,7 +38,7 @@ const Section_5 = () => {
             {Caraousal_items.map((item, index) => (
               <div key={index} className="p-6">
                 {" "}
-                <CarouselItem className="flex flex-col justify-center items-center text-center p-16 basis-1/3 bg-blue-50 rounded-3xl">
+                <CarouselItem className="flex flex-col justify-center items-center text-center p-16 basis-1/2 bg-blue-50 rounded-3xl">
                   {" "}
                   <Image
                     src={item.icon}
