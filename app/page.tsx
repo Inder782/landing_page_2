@@ -5,6 +5,7 @@ import Section_4 from "@/components/section_4/Section_4";
 import Section_5 from "@/components/section_5/Section_5";
 import Section_6 from "@/components/section_6/Section_6";
 import Section_7 from "@/components/section_7/section_7";
+import Footer from "@/components/section_8/Footer";
 import React from "react";
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
       <Section_5 />
       <Section_6 />
       <Section_7 />
+      <Footer />
     </div>
   );
 };
